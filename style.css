@@ -1,0 +1,55 @@
+body {
+    font-family:'Jetbrains Mono', monospace;
+    color:white;
+    background-color: #121212;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .button-container{
+    display:grid;
+    width:175px;
+    grid-template-columns: repeat(4, 1fr);
+    gap:5px;
+  }
+
+  .button {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:60px;
+    height:60px;
+    background-color:#292929;
+    font-size:2rem;
+    transition: transform 0.3s ease;
+    border-radius:0.3rem;
+    user-select:none;
+  }
+  .zero{
+    grid-column: span 2;
+    width:125px;
+  }
+  .button:hover{
+    background-color: #464646;
+    transform: scale(1.05);
+  }
+  .equals{
+    background-color:#3A3B3C;
+  }
+  .input{
+    margin:0.5rem;
+    font-size:1.5rem;
+  }
+  .input-field{
+    display:flex;
+    align-items:center;
+    justify-content: end;
+    width:255px;
+    height:40px;
+    background-color: #464646;
+    border-radius: 0.3rem;
+    margin-bottom:0.5rem;
+  }
+  .delete img{
+    width:50px;
+    height:50px;    
+  }
